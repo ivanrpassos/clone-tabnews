@@ -1,3 +1,5 @@
-test("should be 1 + 1 = 2", () => {
-  expect(1 + 1).toBe(2);
+const calculadora = require("../models/calculadora");
+
+test("should call somar function and return the sum of two numbers", () => {
+  expect(calculadora.somar(1, 1)).toBe(2);
 });
